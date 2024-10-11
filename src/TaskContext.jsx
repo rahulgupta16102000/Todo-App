@@ -6,10 +6,6 @@ export const TaskProvider = ({ children }) => {
   const getInitialTasks = () => {
     const storedTasks = localStorage.getItem('tasks');
     return storedTasks ? JSON.parse(storedTasks) : [
-      { text: 'Brush teeth 🪥', completed: true },
-      { text: 'Buy grocery 🛒', completed: false },
-      { text: 'Pay rent 🏦', completed: false },
-      { text: 'Clean room 🧹', completed: true },
     ];
   };
 
